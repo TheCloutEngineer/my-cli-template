@@ -31,6 +31,14 @@ $ uv tool update-shell
 $ my-uv-tool
 ```
 
+## How to uninstall
+To uninstall the tool, use the following command:
+
+```bash
+uv tool uninstall my-cli-template
+```
+
+
 ## Testing
 To run tests, use the following command:
 
