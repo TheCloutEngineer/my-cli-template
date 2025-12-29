@@ -1,0 +1,28 @@
+[project]
+name = "my-cli-template"
+version = "0.1.0"
+description = "A simple CLI template project."
+license = { text = "MIT" }
+readme = "README.md"
+authors = [
+    { name = "Khalil Saboor", email = "39493781+TheCloutEngineer@users.noreply.github.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "numpy>=2.4.0",
+]
+
+[project.scripts]
+my-cli-template = "my_cli_template.main:main"
+my-np-version = "my_cli_template.utils:numpy_version"
+
+[build-system]
+requires = ["uv_build>=0.9.18,<0.10.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "pytest>=9.0.2",
+    "pytest-cov>=7.0.0",
+    "ruff>=0.14.10",
+]
